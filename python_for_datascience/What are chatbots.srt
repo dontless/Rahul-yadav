@@ -1,0 +1,228 @@
+0
+00:00:01,230 --> 00:00:06,061
+Welcome to Build Your Own Chatbot! My name is Antonio Cangiano and I’m a Software
+
+1
+00:00:06,061 --> 00:00:11,190
+Developer and Technical Evangelist at IBM. In this course, you’ll learn how to build
+
+2
+00:00:11,190 --> 00:00:17,289
+chatbots that rely on Natural Language Processing, without having to write any code.
+
+3
+00:00:17,289 --> 00:00:22,330
+You may have heard a lot of chatter, pun fully intended, around them. And that’s for a
+
+4
+00:00:22,330 --> 00:00:24,660
+good reason. Chatbots are increasingly transforming the
+
+5
+00:00:24,660 --> 00:00:29,100
+way we interact with software. They provide a great business opportunity for both small
+
+6
+00:00:29,100 --> 00:00:33,640
+and large companies. But first, what are chatbots?
+
+7
+00:00:33,640 --> 00:00:39,239
+Chatbots can be defined as software agents that converse through a chat interface. Now,
+
+8
+00:00:39,239 --> 00:00:44,469
+what that means is that they’re software programs that are able to have a conversation,
+
+9
+00:00:44,469 --> 00:00:47,870
+which provides some kind of value to the end user.
+
+10
+00:00:47,870 --> 00:00:52,820
+The user can interact with the chatbot by typing in their end of the conversation, or
+
+11
+00:00:52,820 --> 00:00:56,730
+simply by using their voice, depending on the type of chatbot provided.
+
+12
+00:00:56,730 --> 00:01:03,929
+Virtual assistants like Apple Siri or Amazon Alexa are two examples of popular chatbots
+
+13
+00:01:03,929 --> 00:01:09,890
+interacting via voice rather than text. Typically, the chatbot will greet the user
+
+14
+00:01:09,890 --> 00:01:14,840
+and then invite them to ask some kind of question. When the user replies, the chatbot will parse
+
+15
+00:01:14,840 --> 00:01:20,950
+the input and figure out what’s the intention of the user’s question. Finally, it will
+
+16
+00:01:20,950 --> 00:01:27,050
+respond in some form of consequential or logical manner, either providing information or asking
+
+17
+00:01:27,050 --> 00:01:31,530
+for further details before ultimately answering the question.
+
+18
+00:01:31,530 --> 00:01:35,980
+Great chatbots can keep up this back and forth in a natural way, within the scope of what
+
+19
+00:01:35,980 --> 00:01:40,960
+the chatbot is designed to do. They make the user feel understood and helped. They create
+
+20
+00:01:40,960 --> 00:01:46,350
+a certain rapport with the user, without pretending to be human.
+
+21
+00:01:46,350 --> 00:01:52,780
+Very often chatbots offer some form of virtual assistance to the user. They provide maybe
+
+22
+00:01:52,780 --> 00:01:57,910
+customer or sales support, often collecting information from the user to provide some
+
+23
+00:01:57,910 --> 00:02:02,340
+form of service. For example, Kayak offers a chatbot that will
+
+24
+00:02:02,340 --> 00:02:08,120
+ask the user trip-relevant questions in order to simplify the process of booking their travel
+
+25
+00:02:08,120 --> 00:02:12,120
+arrangements. Spotify’s chatbot makes it very easy to
+
+26
+00:02:12,120 --> 00:02:14,930
+find songs and share them with your friends on social media.
+
+27
+00:02:14,930 --> 00:02:20,819
+Harper Collins’ Epic Reads is a chatbot, a very fun one actually, that recommends
+
+28
+00:02:20,819 --> 00:02:27,430
+books from their catalog depending on your favorite authors, books, or maybe just the
+
+29
+00:02:27,430 --> 00:02:31,200
+current mood you’re in. And the Starbucks’ chatbot even allows you
+
+30
+00:02:31,200 --> 00:02:35,120
+to order your favorite latte directly through a chat.
+
+31
+00:02:35,120 --> 00:02:39,870
+Aside from assistant-type chatbots, there are other type of chatbots, too, such as social
+
+32
+00:02:39,870 --> 00:02:45,209
+bots that interact with users on Twitter, entertainment bots whose main goal is to provide
+
+33
+00:02:45,209 --> 00:02:50,310
+amusement to the user, those developed for research purposes, and unfortunately even
+
+34
+00:02:50,310 --> 00:02:55,579
+spam chatbots such as fake users interacting with real ones on dating sites.
+
+35
+00:02:55,579 --> 00:03:00,430
+The first historic chatbots in the late sixties and early seventies, were in fact mostly an
+
+36
+00:03:00,430 --> 00:03:06,689
+exercise in coming up with seemingly intelligent and human-like chatbots with relatively simple
+
+37
+00:03:06,689 --> 00:03:10,170
+technology. In this course, we’ll develop the type of
+
+38
+00:03:10,170 --> 00:03:16,459
+chatbot that provides information to customers, as they tend to be quite useful for most businesses.
+
+39
+00:03:16,459 --> 00:03:23,310
+Our chatbot will also use text, rather than audio, to converse with our users.
+
+40
+00:03:23,310 --> 00:03:27,680
+Since no code is involved, you don’t need to be a programmer to follow along as we go
+
+41
+00:03:27,680 --> 00:03:32,560
+about creating our chatbot together. Of course, if you are a programmer, you’ll be able
+
+42
+00:03:32,560 --> 00:03:39,299
+to take the chatbot further on your own by improving it and integrating it with other
+
+43
+00:03:39,299 --> 00:03:44,290
+services and APIs. Before we proceed further, it’s worth noting
+
+44
+00:03:44,290 --> 00:03:49,909
+that sometimes you might hear the word “bot” rather than chatbot in this course or elsewhere
+
+45
+00:03:49,909 --> 00:03:57,790
+online. Depending on the context, it’s acceptable to use bot in lieu of chatbot to mean the
+
+46
+00:03:57,790 --> 00:04:01,040
+same thing. Nevertheless, the term bot is more generic
+
+47
+00:04:01,040 --> 00:04:06,299
+and there are software programs that independently perform a certain operation on our behalf
+
+48
+00:04:06,299 --> 00:04:12,810
+without being chatbots. For example, a trader bot might monitor the market for certain conditions
+
+49
+00:04:12,810 --> 00:04:19,300
+and then perform automated stock trading transactions based on that information. That’s not a
+
+50
+00:04:19,300 --> 00:04:24,700
+chatbot, since no chatting is taking place. So, the conversational element is what makes
+
+51
+00:04:24,700 --> 00:04:29,030
+a bot a chatbot. There are many other terms that refer to chatbots,
+
+52
+00:04:29,030 --> 00:04:37,010
+such as chatterbot, chatterbox, talkbot, virtual assistant, virtual agent, Conversational Agent, embodied
+
+53
+00:04:37,010 --> 00:04:43,240
+agent, and even Artificial Conversational Entity or its acronym, ACE. And believe it
+
+54
+00:04:43,240 --> 00:04:50,500
+or not that’s not even an exhaustive list. Since this is a fast-growing field, new terminologies
+
+55
+00:04:50,500 --> 00:04:55,950
+are always introduced. But I like to keep things simple, so I will generally stick to
+
+56
+00:04:55,950 --> 00:04:57,840
+chatbot and occasionally bot in this course.
+

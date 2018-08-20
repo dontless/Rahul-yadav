@@ -1,5 +1,5 @@
 #Hi myself Rahul kumar 
-####################################################################################################################
+#
 All code is given level by level so, you can start learning from basic
 In this  full track you will able to understand about the python and
 start doing scripting through the python .

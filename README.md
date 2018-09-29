@@ -1,6 +1,6 @@
 # Hi myself Rahul kumar 
 
-Respository will be updated with the code .Here I'm updateing the code .....
+Respository will be updated with the code .Here I'm updating the code .....
 
 All code is given level by level so, you can start learning from basic
 In this  full track you will able to understand about the python and
@@ -29,4 +29,4 @@ For opening the code you need to install the jupitor note book
 
 
 
-###################################################thanks#############################
+ ########
